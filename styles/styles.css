@@ -295,6 +295,7 @@ ul {
 
 .mainHeaderImageFlex h1 {
   width: 80%;
+  margin: 45px 0;
 }
 
 .mainHeaderImage {
@@ -305,6 +306,80 @@ ul {
   width: 700px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.materials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #23a123;
+  min-height: 400px;
+}
+
+.materialsFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid green;
+  padding: 30px;
+}
+
+.materialsText {
+  width: 66%;
+  margin: 25px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.materialsText p {
+  width: 90%;
+}
+
+.materialsText .materialsLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+  border: 2px solid red;
+}
+
+.materialsText a {
+  font-size: 1.5rem;
+  color: #151514;
+  font-family: 'Kumar One', sans-serif;
+  font-weight: regular;
+  line-height: 5.8rem;
+  letter-spacing: 2.1px;
+  text-align: center;
+  width: 100%;
+  background-color: #065635;
+  color: #F5F5F5;
+}
+
+.materialsImage {
+  width: 280px;
+  height: 280px;
+}
+
+.materialsImage img {
+  width: 100%;
+  -webkit-box-shadow: -10px 10px 0 5px #F8FB05;
+          box-shadow: -10px 10px 0 5px #F8FB05;
 }
 
 .wrapper {
@@ -350,7 +425,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3.3rem;
+  font-size: 2.8rem;
   color: #151514;
   font-family: 'Kumar One', sans-serif;
   font-weight: regular;
@@ -365,4 +440,14 @@ p {
   font-weight: 400;
   letter-spacing: 2px;
   line-height: 3.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin: 0;
+  padding: 0;
 }
