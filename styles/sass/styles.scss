@@ -11,3 +11,42 @@ $everGreen: #065635;
 $offWhite: #F5F5F5;
 $mint: #E0FDDF;
 $black: #151514;
+
+.wrapper {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+	@include navBar(2rem);
+
+	a {
+		text-decoration: none;
+		@include navBar(2rem);
+
+		&:hover {
+			border-bottom: 3px solid $yellow;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+
+h1 {
+	@include mainHeading(6.8rem);
+	text-transform: uppercase;
+}
+
+h2 {
+	@include subHeading(3.3rem);
+}
+
+p {
+	@include bodyText(2rem);
+}
+
+

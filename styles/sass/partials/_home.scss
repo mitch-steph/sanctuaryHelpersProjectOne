@@ -1,0 +1,54 @@
+.mainHeader {
+	height: 100vh;
+	max-height: 800px;
+	background: url(../../../assets/header-home.jpg) center / cover;
+	position: relative;
+}
+
+.mainHeaderNavFlex {
+
+	// border: 2px solid gold;
+	display: flex;
+	justify-content: flex-end;
+
+	.mainHeaderNav {
+		// border: 2px solid blue;
+		width: 50%;
+		min-width: 400px;
+	}
+
+	ul {
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+		// border: 2px solid blue;
+	}
+}
+
+.mainHeaderImageFlex {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+	// border: 2px solid green;
+	width: 54%;
+	min-width: 600px;
+	justify-content: flex-end;
+	position: relative;
+	right: 100px;
+
+	h1 {
+	// border: 2px solid red;
+	width: 80%;
+	}
+
+
+}
+
+.mainHeaderImage {
+	// border: 2px solid blue;
+	width: 100%;
+	img {
+		width: 700px;
+		object-fit: cover;
+	}
+}

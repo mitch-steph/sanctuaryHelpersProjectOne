@@ -235,3 +235,134 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mainHeader {
+  height: 100vh;
+  max-height: 800px;
+  background: url(../../../assets/header-home.jpg) center/cover;
+  position: relative;
+}
+
+.mainHeaderNavFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.mainHeaderNavFlex .mainHeaderNav {
+  width: 50%;
+  min-width: 400px;
+}
+
+.mainHeaderNavFlex ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+.mainHeaderImageFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+  width: 54%;
+  min-width: 600px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  right: 100px;
+}
+
+.mainHeaderImageFlex h1 {
+  width: 80%;
+}
+
+.mainHeaderImage {
+  width: 100%;
+}
+
+.mainHeaderImage img {
+  width: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  font-size: 2rem;
+  color: #151514;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 1.4px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #151514;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 1.4px;
+}
+
+nav a:hover {
+  border-bottom: 3px solid #F8FB05;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 6.8rem;
+  color: #151514;
+  font-family: 'Kumar One Outline', sans-serif;
+  font-weight: regular;
+  line-height: 6.4rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3.3rem;
+  color: #151514;
+  font-family: 'Kumar One', sans-serif;
+  font-weight: regular;
+  line-height: 5.8rem;
+  letter-spacing: 2.1px;
+}
+
+p {
+  font-size: 2rem;
+  color: #151514;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 3.2rem;
+}
