@@ -1,4 +1,7 @@
 // Header
+// * {
+//   border: 2px solid cornflowerblue;
+// }
 
 .mainHeader {
   height: 100vh;
@@ -81,30 +84,53 @@
     width: 90%;
   }
 
-  .materialsLink {
+
+  .linkButton {
+    margin-top: 10px;
+    @include subHeading(1.5rem);
+    background-color: $everGreen;
+    color: $offWhite;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    border: 2px solid red;
-  }
-
-  a {
-    // padding: 10px;
-    @include subHeading(1.5rem);
-    text-align: center;
-    width: 100%;
-    background-color: $everGreen;
-    color: $offWhite;
+    width: 225px;
+    height: 50px;
   }
 }
 
 .materialsImage {
-  width: 280px;
-  height: 280px;
+  width: 330px;
+  height: 330px;
 
   img {
     width: 100%;
     box-shadow: -10px 10px 0 5px $yellow;
   }
 }
+
+// main images
+
+.mainImages {
+  background: $mint;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+
+}
+
+.mainImagesFlex {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.mainImageContainer {
+  width: 380px;
+
+}
+
+.mainImages img {
+  width: 100%;
+  display: block;
+}
+
