@@ -406,7 +406,7 @@ ul {
 }
 
 .mainFeaturesFlex1 {
-  min-height: 450px;
+  min-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,10 +470,83 @@ ul {
   height: 200px;
 }
 
+.mainBenefits {
+  background: #E0FDDF;
+}
+
+.benefitsWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.benefitsFlexContainer1,
+.benefitsFlexContainer2 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 700px;
+}
+
+.benefitsFlexContainer1 {
+  border: 2px solid orange;
+}
+
+.benefitsFlexContainer2 {
+  border: 2px solid red;
+}
+
+.benefitsText1,
+.benefitsText2 {
+  border: 2px solid blue;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 450px;
+}
+
+.benefitsText1 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: right;
+}
+
+.benefitsText1 h2 {
+  border: 2px solid orange;
+}
+
+.benefitsImage img {
+  width: 100%;
+  display: block;
+}
+
+.benImgOne img {
+  -webkit-box-shadow: 10px 10px 0 5px #F8FB05;
+          box-shadow: 10px 10px 0 5px #F8FB05;
+}
+
+.benImgTwo img {
+  -webkit-box-shadow: -10px 10px 0 5px #F8FB05;
+          box-shadow: -10px 10px 0 5px #F8FB05;
+}
+
 .wrapper {
   width: 95%;
   max-width: 1200px;
   margin: 0 auto;
+  border: 2px solid blue;
 }
 
 nav {
