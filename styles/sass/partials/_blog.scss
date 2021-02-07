@@ -1,0 +1,95 @@
+// * {
+//   border: 2px solid cornflowerblue;
+// }
+
+// General styles
+
+.blogBody {
+  background-color: $mint;
+}
+
+// Blog header
+
+.blogHeader {
+  height: 70vh;
+  max-height: 500px;
+  background: url(/assets/blog-image.jpg) center / cover;
+  position: relative;
+}
+
+.blogHeaderFlex {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    margin-top: 100px;
+  }
+}
+
+.blogHeaderNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 400px;
+  margin-top: 20px;
+
+  .blogLogo {
+    width: 200px;
+    min-width: 150px;
+    margin-top: 10px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+
+  a {
+    padding: 30px;
+  }
+}
+
+// Blog section
+
+.blogSection {
+  display: flex;
+
+  .blogPost {
+    background-color: $offWhite;
+    min-width: 65%;
+  }
+
+  .blogImage img {
+    width: 100%;
+    position: relative;
+    top: -120px;
+    box-shadow: 10px 10px 0 5px $yellow;
+  }
+
+  .blogText {
+    width: 650px;
+    min-width: 65%;
+    position: relative;
+    top: -80px;
+    margin: 20px;
+  }
+
+}
+
+.blogAside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .blogAsideText1,
+  .blogAsideText2 {
+    background-color: $yellow;
+  }
+
+  .blogAsideText1 {
+    width: 75%;
+  }
+}

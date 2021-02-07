@@ -17,7 +17,6 @@ $black: #151514;
   width: 95%;
   max-width: 1200px;
   margin: 0 auto;
-	border: 2px solid blue;
 }
 
 nav {
@@ -45,6 +44,12 @@ h1 {
 
 h2 {
 	@include subHeading(2.8rem);
+}
+
+h3 {
+  @include subHeading(1.8rem);
+  letter-spacing: 1.5px;
+  line-height: 2rem;
 }
 
 p {
