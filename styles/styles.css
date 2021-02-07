@@ -248,7 +248,8 @@ ul {
 
 .mainHeader {
   height: 100vh;
-  max-height: 800px;
+  max-height: 1000px;
+  min-height: 800px;
   background: url(/assets/header-home.jpg) center/cover;
   position: relative;
 }
@@ -274,7 +275,6 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
 }
 
 .mainHeaderImageFlex {
@@ -493,6 +493,7 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 700px;
+  position: relative;
 }
 
 .emptyFlex {
@@ -518,8 +519,9 @@ ul {
           justify-content: flex-end;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  position: relative;
+  position: absolute;
   right: 60px;
+  bottom: 0;
 }
 
 .benefitsText1 h2 {
@@ -558,8 +560,8 @@ ul {
   -ms-flex-item-align: end;
       align-self: flex-end;
   text-align: right;
-  position: relative;
-  left: -90px;
+  position: absolute;
+  left: 60px;
 }
 
 .benefitsText2 p {
@@ -597,7 +599,7 @@ ul {
 .benImgOne img {
   -webkit-box-shadow: 10px 10px 0 5px #F8FB05;
           box-shadow: 10px 10px 0 5px #F8FB05;
-  position: relative;
+  position: absolute;
   left: -60px;
   top: -30px;
 }
@@ -605,7 +607,7 @@ ul {
 .benImgTwo img {
   -webkit-box-shadow: -10px 10px 0 5px #F8FB05;
           box-shadow: -10px 10px 0 5px #F8FB05;
-  position: relative;
+  position: absolute;
   right: -60px;
   bottom: -50px;
 }
@@ -693,6 +695,7 @@ footer p {
 
 .blogHeader {
   height: 70vh;
+  min-height: 400px;
   max-height: 500px;
   background: url(/assets/blog-image.jpg) center/cover;
   position: relative;
@@ -721,9 +724,11 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   width: 100%;
   min-width: 400px;
-  margin-top: 20px;
 }
 
 .blogHeaderNav .blogLogo {
@@ -742,11 +747,8 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50px;
-}
-
-.blogHeaderNav a {
-  padding: 30px;
+  width: 600px;
+  min-width: 400px;
 }
 
 .blogSection {
@@ -758,25 +760,28 @@ footer p {
 .blogSection .blogPost {
   background-color: #F5F5F5;
   min-width: 65%;
+  -webkit-box-shadow: 10px 10px 0 5px #F8FB05;
+          box-shadow: 10px 10px 0 5px #F8FB05;
 }
 
 .blogSection .blogImage img {
   width: 100%;
   position: relative;
   top: -120px;
-  -webkit-box-shadow: 10px 10px 0 5px #F8FB05;
-          box-shadow: 10px 10px 0 5px #F8FB05;
+  -webkit-box-shadow: 10px 15px 0 5px #F8FB05;
+          box-shadow: 10px 15px 0 5px #F8FB05;
 }
 
 .blogSection .blogText {
   width: 650px;
-  min-width: 65%;
   position: relative;
   top: -80px;
   margin: 20px;
+  min-height: 1200px;
 }
 
 .blogAside {
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -787,15 +792,86 @@ footer p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  width: 75%;
+}
+
+.blogAside img {
+  -webkit-box-shadow: -10px 10px 0 5px #F8FB05;
+          box-shadow: -10px 10px 0 5px #F8FB05;
+  width: 320px;
 }
 
 .blogAside .blogAsideText1,
 .blogAside .blogAsideText2 {
   background-color: #F8FB05;
+  width: 335px;
+  padding: 20px;
 }
 
-.blogAside .blogAsideText1 {
-  width: 75%;
+.blogAside h3 {
+  padding-bottom: 15px;
+}
+
+.blogAside ul {
+  margin-left: 20px;
+}
+
+.blogAside li {
+  list-style-type: disc;
+  font-size: 2rem;
+}
+
+.blogAside li a {
+  color: #151514;
+}
+
+.blogAside li a:hover {
+  color: #63635f;
+}
+
+.blogTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 1200px;
+}
+
+.blogText {
+  padding-right: 50px;
+}
+
+.blogText p {
+  margin-bottom: 35px;
+}
+
+.blogText h2 + p {
+  margin-top: 35px;
+  font-style: italic;
+}
+
+.blogText span {
+  font-weight: bolder;
+}
+
+.commentFlex {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 50px;
+}
+
+.commentFlex .commentContainer {
+  width: 650px;
+  padding-right: 50px;
+  margin: 0 20px;
+  margin-top: 20px;
 }
 
 .wrapper {
@@ -825,6 +901,10 @@ nav a {
 
 nav a:hover {
   border-bottom: 3px solid #F8FB05;
+}
+
+nav ul {
+  padding: 20px;
 }
 
 a {
