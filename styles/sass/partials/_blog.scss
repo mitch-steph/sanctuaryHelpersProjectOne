@@ -180,7 +180,6 @@
 
 .blogForm {
   width: 65%;
-  // border: 2px solid red;
   display: flex;
   justify-content: flex-end;
 
@@ -226,6 +225,7 @@
         width: 100%;
         padding: 10px;
         border-bottom: 2px solid $everGreen;
+        @include bodyText(1.5rem);
       }
     }
   }

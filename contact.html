@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/412d33e412.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://kit.fontawesome.com/412d33e412.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="contactBody">
     <header class="contactHeader">
-      <div class="contactHeaderFlex">
+      <div class="contactHeaderFlex wrapper">
         <div class="contactHeaderNav">
           <h3 class="contactLogo">SANCTUARY HELPERS</h3>
           <nav>
@@ -28,61 +33,64 @@
       </div>
     </header>
     <main>
-      <section class="socialMenu">
-        <div class="socialFlex">
-          <div class="contactForm">
-            <form action="submit">
-              <fieldset class="contactFormFlex">
-                <legend class="sr-only">Contact Form</legend>
-                <div class="contactFormFlex1">
-                  <label for="contactName">Name</label>
+      <section class="wrapper contactFlex">
+        <div class="contactForm">
+          <form action="submit">
+            <fieldset class="contactFormFlex">
+              <legend class="sr-only">Comment Form</legend>
+              <div class="contactFormFlex1">
+                <div class="contactNameFlex">
+                  <label for="contactName" class="contactName">Name</label>
                   <input
                     type="text"
-                    placeholder="NAME"
                     name="contactName"
                     id="contactName"
                     class="contactName"
                   />
+                </div>
 
-                  <label for="contactEmail">Email Address</label>
+                <div class="contactEmailFlex">
+                  <label for="contactEmail" class="contactEmail"
+                    >Email Address</label
+                  >
                   <input
                     type="email"
-                    placeholder="EMAIL ADDRESS"
                     name="contactEmail"
                     id="contactEmail"
                     class="contactEmail"
                   />
                 </div>
-                <div class="contactFormFlex2">
-                  <label for="message">Message</label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    class="message"
-                    cols="30"
-                    rows="10"
-                  ></textarea>
-                  <button>
-                    <h4>SUBMIT</h4>
-                  </button>
-                </div>
-              </fieldset>
-            </form>
+              </div>
+              <div class="contactFormFlex2">
+                <label for="message" class="sr-only">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="MESSAGE"
+                ></textarea>
+                <button>
+                  <h4>SUBMIT</h4>
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="contactInfo">
+          <div class="socialIcons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
           </div>
-          <div class="contactInfo">
-            <div class="socialIcons">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-whatsapp"></i>
-            </div>
-            <p>info@email.com</p>
-            <div class="Address">
-              <p>123-456-7890</p>
-              <p>123 Queen Street West, Unit 10</p>
-              <p>Toronto, Ontario</p>
-              <p>M5V 2D5</p>
-            </div>
+          <p>info@email.com</p>
+          <div class="address">
+            <p>123-456-7890</p>
+            <p>123 Queen Street West, Unit 10</p>
+            <p>Toronto, Ontario</p>
+            <p>M5V 2D5</p>
           </div>
         </div>
       </section>
