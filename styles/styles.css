@@ -856,6 +856,15 @@ footer p {
   font-weight: bolder;
 }
 
+.blogAsideText2 li a {
+  font-size: 2rem;
+  color: #151514;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 3.2rem;
+}
+
 .commentFlex {
   width: 65%;
   display: -webkit-box;
@@ -869,9 +878,23 @@ footer p {
 
 .commentFlex .commentContainer {
   width: 650px;
-  padding-right: 50px;
   margin: 0 20px;
+}
+
+.commentFlex .commentBoxText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
   margin-top: 20px;
+}
+
+.commentFlex .commentTextFlex {
+  margin-left: 20px;
+}
+
+.commentFlex .commentTextFlex p:first-of-type {
+  font-weight: bolder;
 }
 
 .wrapper {

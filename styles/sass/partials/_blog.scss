@@ -149,6 +149,10 @@
   
 }
 
+.blogAsideText2 li a {
+  @include bodyText(2rem);
+}
+
 .commentFlex {
   width: 65%;
   display: flex;
@@ -157,8 +161,20 @@
 
   .commentContainer {
     width: 650px;
-    padding-right: 50px;
     margin: 0 20px;
+  }
+
+  .commentBoxText {
+    display: flex;
+    padding: 20px 0;
     margin-top: 20px;
+  }
+
+  .commentTextFlex {
+    margin-left: 20px;
+
+    p:first-of-type {
+      font-weight: bolder;
+    }
   }
 }
