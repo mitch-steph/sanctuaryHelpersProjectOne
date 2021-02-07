@@ -33,7 +33,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   width: 100%;
   min-width: 400px;
   
@@ -157,7 +157,9 @@
   width: 65%;
   display: flex;
   justify-content: flex-end;
-  margin-top: 50px;
+  margin-top: 80px;
+  margin-bottom: 25px;
+
 
   .commentContainer {
     width: 650px;
@@ -178,3 +180,82 @@
     }
   }
 }
+
+.commentContainer h3 + .commentBoxText {
+  margin-bottom: 50px;
+}
+
+// comment form
+
+
+.blogForm {
+  width: 65%;
+  border: 2px solid red;
+  display: flex;
+  justify-content: flex-end;
+
+  fieldset {
+    border: none;
+    width: 650px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .formFlex1 {
+    height: 75px;
+    width: 100%;
+    border: 2px solid red;
+    position: relative;
+    display: flex;
+    padding: 20px;
+    padding-left: 0;
+    
+    label {
+      position: absolute;
+      top: 0;
+    }
+    
+    .emailFlex, .nameFlex{
+      width: 50%;
+      input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      }
+    }
+  }
+
+  .formFlex2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    padding: 20px;
+    padding-left: 0;
+
+    textarea {
+      min-width: 650px;
+      max-width: 650px;
+      min-height: 200px;
+      max-height: 200px;
+      padding: 20px;
+    }
+
+
+    button {
+      @include linkButton();
+      border: none;
+      width: 100%;
+      margin-top: 20px;
+      height: 35px;
+    }
+  }
+}
+
+textarea::placeholder {
+  color: red;
+}
+

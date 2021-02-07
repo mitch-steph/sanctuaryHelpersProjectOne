@@ -724,9 +724,9 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   min-width: 400px;
 }
@@ -873,7 +873,8 @@ footer p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-top: 50px;
+  margin-top: 80px;
+  margin-bottom: 25px;
 }
 
 .commentFlex .commentContainer {
@@ -895,6 +896,131 @@ footer p {
 
 .commentFlex .commentTextFlex p:first-of-type {
   font-weight: bolder;
+}
+
+.commentContainer h3 + .commentBoxText {
+  margin-bottom: 50px;
+}
+
+.blogForm {
+  width: 65%;
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.blogForm fieldset {
+  border: none;
+  width: 650px;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.blogForm .formFlex1 {
+  height: 75px;
+  width: 100%;
+  border: 2px solid red;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  padding-left: 0;
+}
+
+.blogForm .formFlex1 label {
+  position: absolute;
+  top: 0;
+}
+
+.blogForm .formFlex1 .emailFlex, .blogForm .formFlex1 .nameFlex {
+  width: 50%;
+}
+
+.blogForm .formFlex1 .emailFlex input[type="text"], .blogForm .formFlex1 .emailFlex input[type="email"], .blogForm .formFlex1 .nameFlex input[type="text"], .blogForm .formFlex1 .nameFlex input[type="email"] {
+  width: 100%;
+  padding: 10px;
+}
+
+.blogForm .formFlex2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid red;
+  padding: 20px;
+  padding-left: 0;
+}
+
+.blogForm .formFlex2 textarea {
+  min-width: 650px;
+  max-width: 650px;
+  min-height: 200px;
+  max-height: 200px;
+  padding: 20px;
+}
+
+.blogForm .formFlex2 button {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #151514;
+  font-family: 'Kumar One', sans-serif;
+  font-weight: regular;
+  line-height: 5.8rem;
+  letter-spacing: 2.1px;
+  background-color: #065635;
+  color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 225px;
+  height: 50px;
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+  height: 35px;
+}
+
+textarea::-webkit-input-placeholder {
+  color: red;
+}
+
+textarea:-ms-input-placeholder {
+  color: red;
+}
+
+textarea::-ms-input-placeholder {
+  color: red;
+}
+
+textarea::placeholder {
+  color: red;
 }
 
 .wrapper {
