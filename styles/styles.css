@@ -904,13 +904,17 @@ footer p {
 
 .blogForm {
   width: 65%;
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.blogForm input {
+  border: none;
+  background: #E0FDDF;
 }
 
 .blogForm fieldset {
@@ -935,27 +939,42 @@ footer p {
 .blogForm .formFlex1 {
   height: 75px;
   width: 100%;
-  border: 2px solid red;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px;
   padding-left: 0;
 }
 
 .blogForm .formFlex1 label {
   position: absolute;
-  top: 0;
+  top: -7px;
+  margin-left: 20px;
+  font-size: 1.5rem;
+  color: #151514;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 3.2rem;
+  text-transform: uppercase;
 }
 
-.blogForm .formFlex1 .emailFlex, .blogForm .formFlex1 .nameFlex {
-  width: 50%;
+.blogForm .formFlex1 .emailFlex,
+.blogForm .formFlex1 .nameFlex {
+  width: 47%;
 }
 
-.blogForm .formFlex1 .emailFlex input[type="text"], .blogForm .formFlex1 .emailFlex input[type="email"], .blogForm .formFlex1 .nameFlex input[type="text"], .blogForm .formFlex1 .nameFlex input[type="email"] {
+.blogForm .formFlex1 .emailFlex input[type="text"],
+.blogForm .formFlex1 .emailFlex input[type="email"],
+.blogForm .formFlex1 .nameFlex input[type="text"],
+.blogForm .formFlex1 .nameFlex input[type="email"] {
   width: 100%;
   padding: 10px;
+  border-bottom: 2px solid #065635;
 }
 
 .blogForm .formFlex2 {
@@ -967,7 +986,6 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 2px solid red;
   padding: 20px;
   padding-left: 0;
 }
@@ -978,6 +996,15 @@ footer p {
   min-height: 200px;
   max-height: 200px;
   padding: 20px;
+  background-color: #E0FDDF;
+  border: 2px solid #065635;
+  resize: none;
+  font-size: 1.5rem;
+  color: #151514;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 3.2rem;
 }
 
 .blogForm .formFlex2 button {
@@ -1008,19 +1035,58 @@ footer p {
 }
 
 textarea::-webkit-input-placeholder {
-  color: red;
+  font-size: 1.5rem;
+  color: #151514;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 3.2rem;
+  text-transform: uppercase;
 }
 
 textarea:-ms-input-placeholder {
-  color: red;
+  font-size: 1.5rem;
+  color: #151514;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 3.2rem;
+  text-transform: uppercase;
 }
 
 textarea::-ms-input-placeholder {
-  color: red;
+  font-size: 1.5rem;
+  color: #151514;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 3.2rem;
+  text-transform: uppercase;
 }
 
 textarea::placeholder {
-  color: red;
+  font-size: 1.5rem;
+  color: #151514;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #151514;
+}
+
+footer p {
+  color: #F5F5F5;
+  padding: 10px 0;
 }
 
 .wrapper {
