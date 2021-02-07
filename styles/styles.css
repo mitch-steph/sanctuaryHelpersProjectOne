@@ -495,17 +495,12 @@ ul {
   min-height: 700px;
 }
 
-.benefitsFlexContainer1 {
-  border: 2px solid orange;
-}
-
-.benefitsFlexContainer2 {
-  border: 2px solid red;
+.emptyFlex {
+  width: 100px;
 }
 
 .benefitsText1,
 .benefitsText2 {
-  border: 2px solid blue;
   height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -514,17 +509,84 @@ ul {
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
       align-content: center;
-  width: 450px;
+  width: 400px;
 }
 
 .benefitsText1 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  text-align: right;
+  position: relative;
+  right: 60px;
 }
 
 .benefitsText1 h2 {
-  border: 2px solid orange;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.benefitsText1 p {
+  text-align: right;
+}
+
+.benefitsText1 .linkButton {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #151514;
+  font-family: 'Kumar One', sans-serif;
+  font-weight: regular;
+  line-height: 5.8rem;
+  letter-spacing: 2.1px;
+  background-color: #065635;
+  color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 225px;
+  height: 50px;
+}
+
+.benefitsText2 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: right;
+  position: relative;
+  left: -90px;
+}
+
+.benefitsText2 p {
+  text-align: left;
+}
+
+.benefitsText2 .linkButton {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #151514;
+  font-family: 'Kumar One', sans-serif;
+  font-weight: regular;
+  line-height: 5.8rem;
+  letter-spacing: 2.1px;
+  background-color: #065635;
+  color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 225px;
+  height: 50px;
 }
 
 .benefitsImage img {
@@ -535,11 +597,94 @@ ul {
 .benImgOne img {
   -webkit-box-shadow: 10px 10px 0 5px #F8FB05;
           box-shadow: 10px 10px 0 5px #F8FB05;
+  position: relative;
+  left: -60px;
+  top: -30px;
 }
 
 .benImgTwo img {
   -webkit-box-shadow: -10px 10px 0 5px #F8FB05;
           box-shadow: -10px 10px 0 5px #F8FB05;
+  position: relative;
+  right: -60px;
+  bottom: -50px;
+}
+
+.styleSearchImage img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.styleSearchFlex {
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.styleSearchFlex .styleSearchText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.styleSearchFlex p {
+  width: 80%;
+  padding: 10px 0 20px 0;
+}
+
+.styleSearchFlex .linkButton {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #151514;
+  font-family: 'Kumar One', sans-serif;
+  font-weight: regular;
+  line-height: 5.8rem;
+  letter-spacing: 2.1px;
+  background-color: #065635;
+  color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 225px;
+  height: 50px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #151514;
+}
+
+footer p {
+  color: #F5F5F5;
+  padding: 10px 0;
 }
 
 .wrapper {
