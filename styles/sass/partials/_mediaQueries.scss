@@ -53,6 +53,9 @@
 
 .materials {
 
+  .linkButton {
+    margin-top: 25px;
+  }
   margin-bottom: 15px;
 
   .materialsImage {
@@ -113,6 +116,12 @@
   .customizedFlex,
   .communityFlex {
     width: 90%;
+  }
+
+  .mainBenefits {
+    .linkButton {
+      margin-top: 25px;
+    }
   }
 
   .benefitsWrapper {
@@ -176,7 +185,98 @@
     p {
       width: 95%;
     }
+
+    .linkButton {
+      margin-bottom: 4%;
+    }
   }
+}
+
+@media (max-width: 750px) {
+
+  .mainStyleSearch {
+    
+    .styleSearchFlex {
+      margin-top: 25px;
+    }
+
+    .linkButton {
+      margin-bottom: 35px;
+    }
+  }
+
+  .mainHeaderNav {
+   
+
+    input[type="checkbox"]:checked + ul{
+     right: -7px;
+    }
+  }
+
+  .mainHeaderImageFlex {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+
+
+  .hamburgerMenu {
+    display: block;
+    color: $everGreen;
+  }
+
+  .mainHeaderImage {
+    display: none;
+  }
+
+  .mainHeaderNav {
+    position: relative;
+   
+     
+    ul {
+      flex-direction: column;
+      position: fixed;
+      right: -400px;
+      top: 130px;
+      z-index: 10;
+      padding: 0;
+      background: rgba(224,253,223,.8);
+      height: 420px;
+      width: 257px;
+      transition: all .5s ease-in-out;
+      border-radius: 10px;
+
+   
+
+      li {
+        text-align: center;
+        padding: 35px 0;
+        
+
+        &:active {
+          background-color: rgba(6,86,53,.8);
+        }
+        
+        a {
+          font-size: 3rem;
+          color: $everGreen;
+
+          &:hover {
+            border-bottom: none;
+          }
+
+          &:active {
+            color: $offWhite;
+          }
+        }
+        
+
+      }
+    }
+  }
+
+
+
 }
 
 /* Landscape phones and down */

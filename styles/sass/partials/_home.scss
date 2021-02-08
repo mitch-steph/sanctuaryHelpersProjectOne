@@ -8,6 +8,17 @@
   position: relative;
 }
 
+.hamburgerMenu {
+  font-size: 5rem;
+  align-self: center;
+  position: fixed;
+  z-index: 10;
+  top: 43px;
+  right: 40px;
+  display: none;
+  
+}
+
 .mainHeaderNavFlex {
   display: flex;
   justify-content: flex-end;
