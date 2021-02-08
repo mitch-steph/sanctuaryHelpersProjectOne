@@ -51,6 +51,100 @@
 
 @media (max-width: 900px) {
 
+  .mainFeaturesFlex1 {
+    flex-direction: column;
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .featuresIcon {
+      height: fit-content;
+      padding-top:22px;
+
+      i {
+        padding-top:22px;
+      }
+    }
+
+    p {
+      padding-left: 20px;
+    }
+  }
+
+  .featuresText1,
+  .featuresText2,
+  .featuresText3,
+  .featuresText4 {
+    margin:0;
+    
+    align-items: center;
+  }
+
+  .customizedFlex,
+  .communityFlex  {
+    width: 90%;
+}
+
+.benefitsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefitsFlexContainer1,
+.benefitsFlexContainer2 {
+  border: 2px solid red;
+flex-direction: column;
+
+  width: 100%;
+  height: auto;
+  justify-content: center;
+
+  img {
+    position: relative;
+    
+  }
+}
+
+.benefitsFlexContainer2 {
+  border: 2px solid gold;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+.benefitsText1 {
+  right: 0;
+}
+
+.benefitsText2 {
+  left: 0;
+}
+
+.benefitsText1,
+.benefitsText2 {
+  height: 50%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+  width: 90%;
+
+  p {
+    text-align: center;
+  }
+}
+
+
+
+  .mainStyleSearch {
+    p {
+      width: 90%;
+    }
+  }
+
 }
 
 /* Landscape phones and down */

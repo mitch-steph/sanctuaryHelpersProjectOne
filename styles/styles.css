@@ -246,6 +246,10 @@ ul {
   list-style: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .mainHeader {
   height: 100vh;
   max-height: 1000px;
@@ -692,6 +696,7 @@ footer {
 footer p {
   color: #F5F5F5;
   padding: 10px 0;
+  font-size: 1.5rem;
 }
 
 .blogBody {
@@ -1098,6 +1103,7 @@ footer {
 footer p {
   color: #F5F5F5;
   padding: 10px 0;
+  font-size: 1.5rem;
 }
 
 .contactBody {
@@ -1409,6 +1415,7 @@ footer {
 footer p {
   color: #F5F5F5;
   padding: 10px 0;
+  font-size: 1.5rem;
 }
 
 .wrapper {
@@ -1531,4 +1538,109 @@ a {
 }
 
 /* Portrait tablet */
+@media (max-width: 900px) {
+  .mainFeaturesFlex1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainFeaturesFlex1 h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .mainFeaturesFlex1 .featuresIcon {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-top: 22px;
+  }
+  .mainFeaturesFlex1 .featuresIcon i {
+    padding-top: 22px;
+  }
+  .mainFeaturesFlex1 p {
+    padding-left: 20px;
+  }
+  .featuresText1,
+  .featuresText2,
+  .featuresText3,
+  .featuresText4 {
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .customizedFlex,
+  .communityFlex {
+    width: 90%;
+  }
+  .benefitsWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .benefitsFlexContainer1,
+  .benefitsFlexContainer2 {
+    border: 2px solid red;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .benefitsFlexContainer1 img,
+  .benefitsFlexContainer2 img {
+    position: relative;
+  }
+  .benefitsFlexContainer2 {
+    border: 2px solid gold;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .benefitsText1 {
+    right: 0;
+  }
+  .benefitsText2 {
+    left: 0;
+  }
+  .benefitsText1,
+  .benefitsText2 {
+    height: 50%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+  }
+  .benefitsText1 p,
+  .benefitsText2 p {
+    text-align: center;
+  }
+  .mainStyleSearch p {
+    width: 90%;
+  }
+}
+
 /* Landscape phones and down */
