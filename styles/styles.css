@@ -656,7 +656,6 @@ body {
 }
 
 .styleSearchFlex p {
-  width: 80%;
   padding: 10px 0 20px 0;
 }
 
@@ -1539,6 +1538,39 @@ a {
 
 /* Portrait tablet */
 @media (max-width: 900px) {
+  h2 {
+    font-size: 3rem;
+  }
+  .materials {
+    margin-bottom: 15px;
+  }
+  .materials .materialsImage {
+    display: none;
+  }
+  .materials .materialsFlex {
+    padding: 0;
+  }
+  .materials .materialsText {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .materials h2 {
+    margin: 15px;
+  }
+  .materials p {
+    width: 100%;
+  }
   .mainFeaturesFlex1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1546,7 +1578,6 @@ a {
             flex-direction: column;
   }
   .mainFeaturesFlex1 h2 {
-    font-size: 3rem;
     text-align: center;
   }
   .mainFeaturesFlex1 .featuresIcon {
@@ -1583,7 +1614,6 @@ a {
   }
   .benefitsFlexContainer1,
   .benefitsFlexContainer2 {
-    border: 2px solid red;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1596,26 +1626,34 @@ a {
   }
   .benefitsFlexContainer1 img,
   .benefitsFlexContainer2 img {
-    position: relative;
+    position: initial;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .benefitsFlexContainer2 {
-    border: 2px solid gold;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .benefitsImage img {
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 -50px;
+       object-position: 0 -50px;
+  }
   .benefitsText1 {
     right: 0;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
   .benefitsText2 {
     left: 0;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
   .benefitsText1,
   .benefitsText2 {
@@ -1636,10 +1674,10 @@ a {
   }
   .benefitsText1 p,
   .benefitsText2 p {
-    text-align: center;
+    text-align: left;
   }
   .mainStyleSearch p {
-    width: 90%;
+    width: 95%;
   }
 }
 
