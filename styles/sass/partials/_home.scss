@@ -112,7 +112,11 @@
 
 .mainImageContainer {
   width: 380px;
+  margin-right: 20px;
+  }
 
+.mainImageContainer:last-of-type {
+  margin-right: 0;
 }
 
 .mainImages img {

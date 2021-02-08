@@ -1,0 +1,59 @@
+/* Media Breakpoints */
+
+/* Small desktops */
+
+@media (max-width: 1050px) {
+
+  .materialsText h2 {
+    line-height: 4.5rem;
+  }
+
+  .mainBenefits {
+
+  .emptyFlex {
+    width: 20px;
+  }
+
+  .benefitsText1 {
+    margin-bottom: 30px;
+  }
+
+   .benefitsText2 {
+    margin-top: 30px;
+  }
+
+  p {
+    margin-right: 10px;
+  }
+  }
+}
+
+/* Landscape tablet */
+
+@media (max-width: 980px) {
+
+  .mainFeatures h2 {
+    font-size: 2.5rem;
+  }
+
+  .mainFeaturesFlex1 {
+    margin-bottom: 40px;
+  }
+
+  .featuresText1,
+  .featuresText3 {
+    margin-bottom: 30px;
+  }
+
+}
+
+/* Portrait tablet */
+
+@media (max-width: 900px) {
+
+}
+
+/* Landscape phones and down */
+
+@media (max-width: 500px) {
+}

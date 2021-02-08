@@ -398,6 +398,11 @@ ul {
 
 .mainImageContainer {
   width: 380px;
+  margin-right: 20px;
+}
+
+.mainImageContainer:last-of-type {
+  margin-right: 0;
 }
 
 .mainImages img {
@@ -1490,3 +1495,40 @@ a {
   margin: 0;
   padding: 0;
 }
+
+/* Media Breakpoints */
+/* Small desktops */
+@media (max-width: 1050px) {
+  .materialsText h2 {
+    line-height: 4.5rem;
+  }
+  .mainBenefits .emptyFlex {
+    width: 20px;
+  }
+  .mainBenefits .benefitsText1 {
+    margin-bottom: 30px;
+  }
+  .mainBenefits .benefitsText2 {
+    margin-top: 30px;
+  }
+  .mainBenefits p {
+    margin-right: 10px;
+  }
+}
+
+/* Landscape tablet */
+@media (max-width: 980px) {
+  .mainFeatures h2 {
+    font-size: 2.5rem;
+  }
+  .mainFeaturesFlex1 {
+    margin-bottom: 40px;
+  }
+  .featuresText1,
+  .featuresText3 {
+    margin-bottom: 30px;
+  }
+}
+
+/* Portrait tablet */
+/* Landscape phones and down */
