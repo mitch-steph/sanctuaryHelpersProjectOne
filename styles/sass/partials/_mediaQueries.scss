@@ -316,22 +316,113 @@
   }
 }
 
+}
 
 
+@media (max-width: 500px) {
 
+.mainHeader {
+  h1 {
+    font-size: 4rem;
+    line-height: 1.4;
+  }
+}
 
+.materials {
+  h2 {
+    text-align: center;
+  }
+}
 
+.mainFeatures {
+  .featuresText1 {
+  
+    margin-top: 70px;
+    margin-bottom: 20px;
+    padding-bottom: 100px;
+  }
 
+  .featuresText2 {
 
+    margin-top: 30px;
+    padding-bottom: 40px;
+  }
 
+  .featuresText3 {
 
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
 
+  .featuresText4 {
 
+    margin-top: 70px;
+    padding-bottom: 50px;
+  }
+}
 
+.benefitsText1 {
+  padding-bottom: 40px;
+}
 
+.benefitsText2 {
+  padding-bottom: 30px;
+}
+}
 
+@media (max-width: 430px) {
 
+    .mainHeader {
+      h1 {
+        font-size:2.8rem;
+        width: 80%;
+        margin: 45px 0;
+        margin-left: 30px;
+      }
+    }
 
+    .mainHeaderImageFlex {
+  
+      display: flex;
+      flex-wrap: nowrap;
+      text-align: left;
+      // border: 2px solid green;
+      width: auto;
+      min-width: 200px;
+      justify-content: flex-start;
+      position: relative;
+      right: initial;
+    }
 
+    .mainImagesFlex:last-child{
+      width: 80%;
+      margin: 0 auto;
+    }
 
+    .mainImages {
+      min-height: 400px;
+    }
+
+    .customizedFlex {
+      margin-top: 50px;
+    }
+   
+    .mainFeatures {
+     height: 1200px;
+      margin-top: 0;
+    }
+
+    .featuresText1,
+    .featuresText2,
+    .featuresText3,
+    .featuresText4 {
+      height: 210px;
+      padding:0;
+      margin:0;
+    }
+
+}
+
+@media (max-width: 650px) {
+  
 }
