@@ -1956,3 +1956,50 @@ a {
 }
 
 /* styles.css | http://127.0.0.1:5500/styles/styles.css */
+/* Media Breakpoints */
+/* Small desktops */
+@media (max-width: 1050px) {
+  .blogSection {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .blogSection .blogPost {
+    max-width: 55%;
+  }
+  .blogSection .blogPost .blogImage img {
+    top: -50px;
+  }
+  .blogSection .blogPost .blogTextContainer {
+    height: auto;
+  }
+  .blogSection .blogPost .blogText {
+    width: 100%;
+    top: -40px;
+    margin-left: 40px;
+    margin-bottom: -40px;
+  }
+  .blogAside {
+    width: 250px;
+    position: relative;
+    right: 0;
+    margin-top: 80px;
+  }
+  .blogAside img {
+    width: 100%;
+  }
+  .blogAside .blogAsideText1,
+  .blogAside .blogAsideText2 {
+    width: 100%;
+  }
+  .commentFlex .commentContainer {
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  .blogForm {
+    margin-left: 40px;
+  }
+}
+
+/* Landscape tablet */
