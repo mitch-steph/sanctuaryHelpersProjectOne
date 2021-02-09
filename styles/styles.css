@@ -1884,3 +1884,51 @@ a {
     margin: 0;
   }
 }
+
+@media (max-width: 365px) {
+  .materials h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .mainHeaderImageFlex {
+    position: relative;
+    top: 100px;
+    text-align: center;
+  }
+  .mainHeaderImageFlex h1 {
+    font-size: 3rem;
+  }
+  .mainFeatures h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .featuresText1,
+  .featuresText2,
+  .featuresText3,
+  .featuresText4 {
+    height: 225px;
+  }
+  .customizedFlex {
+    position: relative;
+    top: -20px;
+  }
+  .mainBenefits {
+    margin-top: 30px;
+  }
+  .mainBenefits h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-bottom: 10px;
+  }
+  .benefitsFlexContainer1 {
+    height: 600px;
+  }
+  .benefitsText1 p,
+  .benefitsText2 p {
+    width: 80%;
+  }
+  .mainStyleSearch h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
