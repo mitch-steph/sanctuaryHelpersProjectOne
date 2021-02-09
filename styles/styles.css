@@ -1638,7 +1638,6 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    height: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1890,6 +1889,10 @@ a {
     font-size: 2rem;
     line-height: 3rem;
   }
+  .mainFeatures {
+    height: 1250px;
+    margin-top: 0;
+  }
   .mainHeaderImageFlex {
     position: relative;
     top: 100px;
@@ -1908,13 +1911,6 @@ a {
   .featuresText4 {
     height: 225px;
   }
-  .customizedFlex {
-    position: relative;
-    top: -20px;
-  }
-  .mainBenefits {
-    margin-top: 30px;
-  }
   .mainBenefits h2 {
     font-size: 2rem;
     line-height: 3rem;
@@ -1922,6 +1918,22 @@ a {
   }
   .benefitsFlexContainer1 {
     height: 600px;
+  }
+  .benefitsFlexContainer2 {
+    margin-top: 20px;
+  }
+  .benefitsFlexContainer1 {
+    /* justify-content: center; */
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: auto;
+  }
+  .benefitsFlexContainer1 h2 {
+    margin-top: 25px;
   }
   .benefitsText1 p,
   .benefitsText2 p {
@@ -1934,20 +1946,12 @@ a {
   .benefitsImage img {
     height: auto;
   }
-  .benefitsFlexContainer1, .benefitsFlexContainer2 {
-    /* justify-content: center; */
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    min-height: auto;
+  .benefitsText1 {
+    position: relative;
+    top: 20px;
   }
-  .benefitsFlexContainer1, .benefitsFlexContainer2 {
-    /* min-height: 700px; */
-    /* position: relative; */
-    min-height: auto;
+  .communityFlex {
+    margin-bottom: 10px;
   }
 }
 

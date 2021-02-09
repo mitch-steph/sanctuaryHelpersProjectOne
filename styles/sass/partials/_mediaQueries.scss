@@ -131,7 +131,6 @@
   .benefitsFlexContainer2 {
     flex-direction: column;
     width: 100%;
-    height: auto;
     justify-content: center;
 
     img {
@@ -418,6 +417,11 @@
     line-height: 3rem;
   }
 
+  .mainFeatures {
+    height: 1250px;
+    margin-top: 0;
+  }
+
   .mainHeaderImageFlex {
     position: relative;
     top: 100px;
@@ -440,10 +444,6 @@
     height: 225px;
   }
 
-  .customizedFlex {
-    position: relative;
-    top: -20px;
-  }
 
   .mainBenefits {
  
@@ -453,15 +453,28 @@
       padding-bottom: 10px;
     }
   }
+  .benefitsFlexContainer1{
+    height: 600px;
+  }
 
-
-
+  .benefitsFlexContainer2 {
+    margin-top: 20px;
+  }
+ 
   .benefitsFlexContainer1 {
     /* justify-content: center; */
+    
      justify-content: flex-start;
     align-items: center;
     min-height: auto;
+
+    h2 {
+      margin-top: 25px;
+    }
+    
   }
+
+
 
   .benefitsText1 p,
   .benefitsText2 p {
@@ -479,12 +492,17 @@
 
   }
 
-  .benefitsWrapper {
-    justify-content: space-between;
+  .benefitsText1 {
+    position: relative;
+    top: 20px;
+  }
+
+  .communityFlex {
+    margin-bottom: 10px;
   }
 
   
-
+}
 
 // 
 
