@@ -5,6 +5,7 @@
 @media (max-width: 1050px) {
   .blogSection {
     justify-content: space-between;
+  
 
     .blogPost {
       max-width: 55%;
@@ -47,17 +48,164 @@
   // }
 
   .commentFlex .commentContainer {
-    margin-left: 40px;
-    margin-right: 10px;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 20px;
+  
   }
+
+  .comments {
+  
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .commentFlex {
+  width: auto;
+ 
+  }
+
+  
 
   .blogForm {
     margin-left: 40px;
   }
+
+  .blogForm {
+ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+    margin-left: 0;
+    input {
+      border: none;
+      background: $mint;
+    }
+  
+    fieldset {
+      
+      border: none;
+      width: 300px;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: initial;
+      flex-wrap: wrap;
+    }
+
+}
 }
 
 /* Landscape tablet */
 
 @media (max-width: 980px) {
+  
+
+
+
+  
+}
+
+// 850px Width
+
+@media (max-width: 850px) {
+
+  .blogHeader {
+    height: 70vh;
+    min-height: 400px;
+    max-height: 500px;
+    background: url(/assets/blog-image.jpg) right / cover;
+    position: relative;
+  }
+  .blogHeader {
+    h1 {
+      align-self: center;
+      font-size: 10rem;
+      position: relative;
+      top: 50px;
+    }
+
+    .blogHeaderNav {
+      justify-content: center;
+    }
+   .blogLogo {
+     display: none;
+   }
+  }
+  .blogSection {
+    flex-direction: column;
+
+    h2 {
+      margin-top: 35px;
+      text-align: center;
+      font-size: 3.5rem;
+    }
+    
+    .blogTextContainer {
+      display: flex;
+      align-content: center;
+    }
+
+    h2 + p {
+      text-align: center;
+      margin: 15px auto;
+      width: 60%;
+      padding-bottom: 15px;
+      border-bottom: 1px solid $black;
+    }
+
+   .blogAside img {
+     display: none;
+   }
+
+   .blogPost {
+    background-color: $offWhite;
+    min-width: 100%;
+    box-shadow: 10px 10px 0 5px $yellow;
+  }
+
+  .blogImage{
+    display: flex;
+    justify-content: center;
+  }
+
+  .blogImage img {
+    width: 70%;
+    position: initial;
+    margin-bottom: 45px;
+    margin-top: 45px;
+    box-shadow: 10px 15px 0 5px $yellow;
+  }
+  }
+
+  .blogAside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    
+  }
+
+  // turning off the aside
+
+  .blogAsideText1,
+  .blogAsideText2 {
+    height: 200px;
+    text-align: center;
+    display: none;
+  }
+
+  .blogAsideText1 h3 {
+    padding: 20px;
+  }
+  .blogAsideText2 h3 {
+    padding-top: 20px;
+  }
+
+  .blogAsideText2 {
+    height: 220px;
+    border-top: 1px solid $black;
+  }
 }
