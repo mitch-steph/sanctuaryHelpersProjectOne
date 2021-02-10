@@ -1,0 +1,112 @@
+/* Media Breakpoints */
+
+/* Small desktops */
+
+@media (max-width: 1050px) {
+  
+  .contactFlex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .contactForm {
+      width: auto;
+      top: -50px;
+      left: 0;
+    }
+  }
+
+.contactInfo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: -20px;
+  margin-left: 20px;
+  padding: 20px 0 20px 20px;
+
+  .socialIcons {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .socialIcons + p {
+    margin-top: 20px;
+  }
+
+  a i {
+    font-size: 2.5rem;
+    color: $everGreen;
+    padding-right: 25px;
+    margin-bottom: 0;
+  }
+}
+
+}
+
+// 850px Width
+
+@media (max-width: 850px) {
+
+  .contactHeader {
+    height: 70vh;
+    min-height: 400px;
+    max-height: 500px;
+    background: url(/assets/contact-image.jpg) right / cover;
+    position: relative;
+  }
+
+  .contactHeader {
+    h1 {
+      align-self: center;
+      font-size: 7.5rem;
+      position: relative;
+      top: -20px;
+    }
+
+    .contactHeaderNav {
+      justify-content: center;
+      flex-direction: column-reverse;
+    }
+
+    .contactLogo {
+      padding-left: 40px;
+      padding-top: 30px;
+    }
+  }
+
+.contactInfo {
+  width: 100%;
+  height: 300px;
+  flex-direction: column;
+  
+  a {
+    padding: 20px;
+    padding-bottom: 0;
+
+    & :last-child {
+      padding-right: 0;
+    }
+  }
+
+.address {
+  text-align: center;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}

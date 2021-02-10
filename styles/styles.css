@@ -382,6 +382,12 @@ body {
   height: 50px;
 }
 
+.materialsText .linkButton:hover, .materialsText .linkButton:focus {
+  background-color: #F5F5F5;
+  border: 3px solid #065635;
+  color: #065635;
+}
+
 .materialsImage {
   width: 330px;
   height: 330px;
@@ -578,6 +584,12 @@ body {
   height: 50px;
 }
 
+.benefitsText1 .linkButton:hover, .benefitsText1 .linkButton:focus {
+  background-color: #F5F5F5;
+  border: 3px solid #065635;
+  color: #065635;
+}
+
 .benefitsText2 {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -611,6 +623,12 @@ body {
           align-items: center;
   width: 225px;
   height: 50px;
+}
+
+.benefitsText2 .linkButton:hover, .benefitsText2 .linkButton:focus {
+  background-color: #F5F5F5;
+  border: 3px solid #065635;
+  color: #065635;
 }
 
 .benefitsImage img {
@@ -693,6 +711,12 @@ body {
           align-items: center;
   width: 225px;
   height: 50px;
+}
+
+.styleSearchFlex .linkButton:hover, .styleSearchFlex .linkButton:focus {
+  background-color: #F5F5F5;
+  border: 3px solid #065635;
+  color: #065635;
 }
 
 footer {
@@ -847,7 +871,7 @@ footer p {
   padding-bottom: 15px;
 }
 
-.blogAside ul {
+.blogAside .blogNav {
   margin-left: 20px;
 }
 
@@ -1074,6 +1098,12 @@ footer p {
   width: 100%;
   margin-top: 20px;
   height: 35px;
+}
+
+.blogForm .formFlex2 button:hover, .blogForm .formFlex2 button:focus {
+  background-color: #F5F5F5;
+  border: 3px solid #065635;
+  color: #065635;
 }
 
 textarea::-webkit-input-placeholder {
@@ -1351,6 +1381,12 @@ footer p {
   height: 40px;
 }
 
+.contactForm .contactFormFlex2 button:hover, .contactForm .contactFormFlex2 button:focus {
+  background-color: #F5F5F5;
+  border: 3px solid #065635;
+  color: #065635;
+}
+
 textarea::-webkit-input-placeholder {
   font-size: 1.5rem;
   color: #151514;
@@ -1416,11 +1452,28 @@ textarea::placeholder {
   margin-top: 20px;
 }
 
+.contactInfo a {
+  padding: 10px;
+}
+
+.contactInfo a :first-child {
+  padding-left: 0;
+}
+
 .contactInfo a i {
   font-size: 2.5rem;
   color: #065635;
-  padding-right: 25px;
+  padding: 20px;
   margin-bottom: 0;
+}
+
+.contactInfo a i :first-child {
+  padding-left: 0;
+}
+
+.contactEmailAddress :hover,
+.contactEmailAddress :focus {
+  color: #065635;
 }
 
 .address {
@@ -2073,15 +2126,20 @@ a {
         align-self: center;
     font-size: 9rem;
     position: relative;
-    top: 50px;
+    top: 20px;
   }
   .blogHeader .blogHeaderNav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .blogHeader .blogLogo {
-    display: none;
+    padding-left: 30px;
+    padding-top: 30px;
   }
   .blogSection {
     -webkit-box-orient: vertical;
@@ -2164,13 +2222,13 @@ a {
 }
 
 @media (max-width: 750px) {
-  input[type="checkbox"]:checked + ul {
+  input[type="checkbox"]:checked + .blogNav {
     right: -7px;
   }
   .blogHeaderNav {
     position: relative;
   }
-  .blogHeaderNav ul {
+  .blogHeaderNav .blogNav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2182,10 +2240,10 @@ a {
             align-items: center;
     min-width: 257px;
   }
-  .blogHeaderNav ul li {
+  .blogHeaderNav .blogNav li {
     width: 257px;
   }
-  .blogHeaderNav ul {
+  .blogHeaderNav .blogNav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2202,24 +2260,24 @@ a {
     transition: all 0.5s ease-in-out;
     border-radius: 10px;
   }
-  .blogHeaderNav ul li {
+  .blogHeaderNav .blogNav li {
     text-align: center;
     padding: 35px 0;
   }
-  .blogHeaderNav ul li:active {
+  .blogHeaderNav .blogNav li:active {
     background-color: rgba(6, 86, 53, 0.8);
   }
-  .blogHeaderNav ul li:active a {
+  .blogHeaderNav .blogNav li:active a {
     color: #F5F5F5;
   }
-  .blogHeaderNav ul li a {
+  .blogHeaderNav .blogNav li a {
     font-size: 3rem;
     color: #065635;
   }
-  .blogHeaderNav ul li a:hover {
+  .blogHeaderNav .blogNav li a:hover {
     border-bottom: none;
   }
-  .blogHeaderNav ul li a:active {
+  .blogHeaderNav .blogNav li a:active {
     color: #F5F5F5;
   }
 }
@@ -2362,5 +2420,118 @@ a {
     width: 100%;
     margin-top: 20px;
     height: 35px;
+  }
+  .blogForm .formFlex2 button:hover, .blogForm .formFlex2 button:focus {
+    background-color: #F5F5F5;
+    border: 3px solid #065635;
+    color: #065635;
+  }
+}
+
+/* Media Breakpoints */
+/* Small desktops */
+@media (max-width: 1050px) {
+  .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactFlex .contactForm {
+    width: auto;
+    top: -50px;
+    left: 0;
+  }
+  .contactInfo {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    top: -20px;
+    margin-left: 20px;
+    padding: 20px 0 20px 20px;
+  }
+  .contactInfo .socialIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .contactInfo .socialIcons + p {
+    margin-top: 20px;
+  }
+  .contactInfo a i {
+    font-size: 2.5rem;
+    color: #065635;
+    padding-right: 25px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .contactHeader {
+    height: 70vh;
+    min-height: 400px;
+    max-height: 500px;
+    background: url(/assets/contact-image.jpg) right/cover;
+    position: relative;
+  }
+  .contactHeader h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 7.5rem;
+    position: relative;
+    top: -20px;
+  }
+  .contactHeader .contactHeaderNav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contactHeader .contactLogo {
+    padding-left: 40px;
+    padding-top: 30px;
+  }
+  .contactInfo {
+    width: 100%;
+    height: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactInfo a {
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  .contactInfo a :last-child {
+    padding-right: 0;
+  }
+  .contactInfo .address {
+    text-align: center;
   }
 }
