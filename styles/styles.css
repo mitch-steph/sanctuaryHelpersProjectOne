@@ -942,6 +942,7 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 20px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -1759,9 +1760,13 @@ a {
   .mainHeaderNav ul li {
     text-align: center;
     padding: 35px 0;
+    width: 257px;
   }
   .mainHeaderNav ul li:active {
     background-color: rgba(6, 86, 53, 0.8);
+  }
+  .mainHeaderNav ul li:active a {
+    color: #F5F5F5;
   }
   .mainHeaderNav ul li a {
     font-size: 3rem;
@@ -2159,8 +2164,26 @@ a {
 }
 
 @media (max-width: 750px) {
+  input[type="checkbox"]:checked + ul {
+    right: -7px;
+  }
   .blogHeaderNav {
     position: relative;
+  }
+  .blogHeaderNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 257px;
+  }
+  .blogHeaderNav ul li {
+    width: 257px;
   }
   .blogHeaderNav ul {
     -webkit-box-orient: vertical;
@@ -2186,6 +2209,9 @@ a {
   .blogHeaderNav ul li:active {
     background-color: rgba(6, 86, 53, 0.8);
   }
+  .blogHeaderNav ul li:active a {
+    color: #F5F5F5;
+  }
   .blogHeaderNav ul li a {
     font-size: 3rem;
     color: #065635;
@@ -2196,28 +2222,29 @@ a {
   .blogHeaderNav ul li a:active {
     color: #F5F5F5;
   }
-  .blogHeaderNav .blogHeaderNav input[type="checkbox"]:checked + ul {
-    right: -7px;
-  }
-  .blogHeaderNav .commentFlex .commentContainer {
-    margin: 0 20px 30px 30px;
-  }
-  .blogHeaderNav .blogForm {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: 0;
-  }
 }
 
 @media (max-width: 680px) {
+  .blogHeader {
+    height: 100vh;
+    min-height: 100vh;
+  }
+  .blogText {
+    padding-right: 0;
+  }
+  .blogText h2 {
+    font-size: 3rem;
+  }
+  .comments {
+    position: relative;
+    top: -50px;
+  }
   .commentFlex .commentContainer {
     width: 100%;
     margin: 0 30px;
+  }
+  .comment {
+    margin-bottom: 25px;
   }
   .blogForm {
     display: -webkit-box;
@@ -2230,6 +2257,14 @@ a {
   }
   .blogForm fieldset {
     width: 100%;
+    min-height: 600px;
+  }
+  .blogForm .formFlex1 {
+    padding-right: 0;
+    padding: 10px;
+    height: 200px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .blogForm .formFlex1 label {
     position: absolute;
@@ -2242,6 +2277,14 @@ a {
     letter-spacing: 2px;
     line-height: 3.2rem;
     text-transform: uppercase;
+  }
+  .blogForm .formFlex1 .emailFlex label {
+    position: absolute;
+    top: 78px;
+  }
+  .blogForm .formFlex1 .nameFlex label {
+    position: absolute;
+    top: -29px;
   }
   .blogForm .formFlex1 .emailFlex,
   .blogForm .formFlex1 .nameFlex {
@@ -2260,7 +2303,12 @@ a {
   .blogForm .formFlex1 .emailFlex input[type="email"],
   .blogForm .formFlex1 .nameFlex input[type="text"],
   .blogForm .formFlex1 .nameFlex input[type="email"] {
-    width: 95%;
+    width: 100%;
+  }
+  .blogForm .nameFlex {
+    margin-top: 10px;
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
   .blogForm .formFlex2 {
     width: 100%;
@@ -2271,8 +2319,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 20px;
-    padding-left: 10px;
+    padding: 5px;
   }
   .blogForm .formFlex2 textarea {
     min-width: 100%;

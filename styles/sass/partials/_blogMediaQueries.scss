@@ -188,8 +188,24 @@
 
 @media (max-width: 750px) {
 
+  input[type="checkbox"]:checked + ul {
+    right: -7px;
+    
+  }
+
   .blogHeaderNav {
-    position: relative;
+    
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-width: 257px;
+
+      li {
+        width: 257px;
+      }
+    }
+     position: relative;
 
     ul {
       flex-direction: column;
@@ -210,6 +226,9 @@
 
         &:active {
           background-color: rgba(6, 86, 53, 0.8);
+          a {
+            color: $offWhite;
+          }
         }
 
         a {
@@ -226,33 +245,44 @@
         }
       }
     }
-
-    .blogHeaderNav {
-      input[type="checkbox"]:checked + ul {
-        right: -7px;
-      }
-    }
-
-    .commentFlex .commentContainer {
-      margin: 0 20px 30px 30px;
-    }
-
-    .blogForm {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin-left: 0;
-    }
   }
 }
+
+
+
+
+
+
+
 
 // 680px Width
 
 @media (max-width: 680px) {
 
+  .blogHeader {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  .blogText {
+    padding-right: 0;
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+  .comments {
+    position: relative;
+    top: -50px;
+  }
+
 .commentFlex .commentContainer {
       width: 100%;
       margin: 0 30px;
+    }
+
+    .comment {
+      margin-bottom: 25px;
     }
 
 .blogForm {
@@ -261,10 +291,14 @@
 
     fieldset {
       width: 100%;
+      min-height: 600px;
     }
 
   .formFlex1 {
-
+    padding-right: 0;
+    padding: 10px;
+    height: 200px;
+    flex-wrap: wrap;
     label {
       position: absolute;
       top: -10px;
@@ -272,6 +306,16 @@
 
       @include bodyText(1.5rem);
       text-transform: uppercase;
+    }
+
+
+    .emailFlex label {
+      position: absolute;
+      top: 78px;
+    }
+    .nameFlex label {
+      position: absolute;
+      top: -29px;
     }
 
     .emailFlex,
@@ -282,17 +326,21 @@
       justify-content: space-between;
       input[type="text"],
       input[type="email"] {
-        width: 95%;
+        width: 100%;
       }
     }
+  }
+
+  .nameFlex {
+    margin-top: 10px;
+    transform: translateY(-15px);
   }
 
   .formFlex2 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    padding-left: 10px;
+    padding:5px;
     
 
     textarea {
