@@ -804,6 +804,10 @@ footer p {
   margin-top: 10px;
 }
 
+.blogHeaderNav .blogLogo a {
+  color: #151514;
+}
+
 .blogHeaderNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1222,6 +1226,10 @@ footer p {
   width: 200px;
   min-width: 150px;
   margin-top: 10px;
+}
+
+.contactHeaderNav .contactLogo a {
+  color: #151514;
 }
 
 .contactHeaderNav ul {
