@@ -1,6 +1,6 @@
 /* Media Breakpoints */
 
-/* Small desktops */
+// 1050px screen width
 
 @media (max-width: 1050px) {
   .blogSection {
@@ -97,6 +97,7 @@
       align-self: center;
       font-size: 7.5rem;
       position: relative;
+    
     }
 
     .blogHeaderNav {
@@ -163,7 +164,6 @@
     width: 100%;
   }
 
-  // turning off the aside
 
   .blogAsideText1,
   .blogAsideText2 {
@@ -259,6 +259,10 @@
   .blogHeader {
     height: 70vh;
     min-height: 70vh;
+  }
+
+  .blogHeaderNav {
+    min-width: initial;
   }
 
   .blogText {
@@ -360,4 +364,51 @@
       }
     }
   }
+}
+
+// 410px screen width
+
+@media (max-width: 410px){
+.blogForm .formFlex2 {
+  textarea {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 200px;
+    max-height: 200px;
+    padding: 20px;
+    background-color: $mint;
+    border: 2px solid $everGreen;
+    resize: none;
+    align-self: center;
+    @include bodyText(1.5rem);
+  }
+
+}
+  
+}
+
+// 350px screen width
+
+@media (max-width: 350px){
+.blogForm .formFlex2 {
+  textarea {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    padding: 20px;
+    background-color: $mint;
+    border: 2px solid $everGreen;
+    resize: none;
+    align-self: center;
+    @include bodyText(1.5rem);
+  }
+
+}
+
+.blogLogo {
+  position: relative;
+  top: 75px;
+}
+  
 }

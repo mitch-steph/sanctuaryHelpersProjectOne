@@ -858,6 +858,10 @@ footer p {
   width: 75%;
 }
 
+.blogAside ul {
+  padding-left: 15px;
+}
+
 .blogAside img {
   -webkit-box-shadow: -10px 10px 0 5px #F8FB05;
           box-shadow: -10px 10px 0 5px #F8FB05;
@@ -1585,7 +1589,6 @@ a {
 }
 
 /* Media Breakpoints */
-/* Small desktops */
 @media (max-width: 1050px) {
   .materialsText h2 {
     line-height: 4.5rem;
@@ -1604,7 +1607,6 @@ a {
   }
 }
 
-/* Landscape tablet */
 @media (max-width: 980px) {
   .mainFeatures h2 {
     font-size: 2.5rem;
@@ -1618,7 +1620,6 @@ a {
   }
 }
 
-/* Portrait tablet */
 @media (max-width: 900px) {
   h2 {
     font-size: 3rem;
@@ -1917,6 +1918,9 @@ a {
     width: 80%;
     margin: 45px 0;
   }
+  .benefitsText2 h2 {
+    text-align: center;
+  }
   .mainHeaderImageFlex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1953,6 +1957,9 @@ a {
     height: 210px;
     padding: 0;
     margin: 0;
+  }
+  .styleSearchText h2 {
+    font-size: 2.5rem;
   }
 }
 
@@ -1993,7 +2000,6 @@ a {
     margin-top: 20px;
   }
   .benefitsFlexContainer1 {
-    /* justify-content: center; */
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -2025,9 +2031,7 @@ a {
   }
 }
 
-/* styles.css | http://127.0.0.1:5500/styles/styles.css */
 /* Media Breakpoints */
-/* Small desktops */
 @media (max-width: 1050px) {
   .blogSection {
     -webkit-box-pack: justify;
@@ -2288,6 +2292,9 @@ a {
     height: 70vh;
     min-height: 70vh;
   }
+  .blogHeaderNav {
+    min-width: initial;
+  }
   .blogText {
     padding-right: 0;
   }
@@ -2430,8 +2437,55 @@ a {
   }
 }
 
+@media (max-width: 410px) {
+  .blogForm .formFlex2 textarea {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 200px;
+    max-height: 200px;
+    padding: 20px;
+    background-color: #E0FDDF;
+    border: 2px solid #065635;
+    resize: none;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 1.5rem;
+    color: #151514;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 3.2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .blogForm .formFlex2 textarea {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    padding: 20px;
+    background-color: #E0FDDF;
+    border: 2px solid #065635;
+    resize: none;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 1.5rem;
+    color: #151514;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 3.2rem;
+  }
+  .blogLogo {
+    position: relative;
+    top: 75px;
+  }
+}
+
 /* Media Breakpoints */
-/* Small desktops */
 @media (max-width: 1050px) {
   .contactFlex {
     -webkit-box-orient: vertical;
@@ -2489,6 +2543,9 @@ a {
 }
 
 @media (max-width: 850px) {
+  .socialIcons:first-child {
+    padding-left: 20px;
+  }
   .contactHeader {
     height: 70vh;
     min-height: 400px;
@@ -2611,6 +2668,9 @@ a {
 }
 
 @media (max-width: 680px) {
+  .contactHeaderNav {
+    min-width: initial;
+  }
   .contactHeader {
     height: 70vh;
     min-height: 70vh;
@@ -2740,5 +2800,63 @@ a {
     background-color: #F5F5F5;
     border: 3px solid #065635;
     color: #065635;
+  }
+}
+
+@media (max-width: 410px) {
+  .contactLogo {
+    position: relative;
+    top: 75px;
+  }
+  .contactForm .contactFormFlex2 textarea {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 200px;
+    max-height: 200px;
+    padding: 20px;
+    background-color: #F5F5F5;
+    border: 2px solid #065635;
+    resize: none;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 1.5rem;
+    color: #151514;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 3.2rem;
+  }
+  .address p {
+    font-size: 1.8rem;
+  }
+  .address {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .contactForm .contactFormFlex2 textarea {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    padding: 20px;
+    background-color: #F5F5F5;
+    border: 2px solid #065635;
+    resize: none;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 1.5rem;
+    color: #151514;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 3.2rem;
+  }
+  .blogLogo {
+    position: relative;
+    top: 75px;
   }
 }

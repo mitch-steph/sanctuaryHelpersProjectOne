@@ -1,6 +1,6 @@
 /* Media Breakpoints */
 
-/* Small desktops */
+// 1050px screen width
 
 @media (max-width: 1050px) {
   .contactFlex {
@@ -47,6 +47,10 @@
 // 850px Width
 
 @media (max-width: 850px) {
+
+  .socialIcons:first-child {
+    padding-left: 20px;
+  }
   .contactHeader {
     height: 70vh;
     min-height: 400px;
@@ -175,6 +179,10 @@
 // 680px Width
 
 @media (max-width: 680px) {
+  .contactHeaderNav {
+    min-width: initial;
+  }
+  
   .contactHeader {
     height: 70vh;
     min-height: 70vh;
@@ -262,4 +270,66 @@
       }
     }
   }
+}
+
+
+
+// 410px screen width
+
+@media (max-width: 410px){
+  .contactLogo {
+    position: relative;
+    top: 75px;
+  }
+ 
+.contactForm .contactFormFlex2 {
+  textarea {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 200px;
+    max-height: 200px;
+    padding: 20px;
+    background-color: $offWhite;
+    border: 2px solid $everGreen;
+    resize: none;
+    align-self: center;
+    @include bodyText(1.5rem);
+  }
+
+}
+
+.address p {
+  font-size: 1.8rem;
+}
+
+.address {
+  margin-bottom: 10px;
+}
+  
+}
+
+// 350px screen width
+
+@media (max-width: 350px){
+.contactForm .contactFormFlex2 {
+  textarea {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    padding: 20px;
+    background-color: $offWhite;
+    border: 2px solid $everGreen;
+    resize: none;
+    align-self: center;
+    @include bodyText(1.5rem);
+  }
+
+}
+
+.blogLogo {
+  position: relative;
+  top: 75px;
+}
+  
 }
