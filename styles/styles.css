@@ -1253,6 +1253,8 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  min-height: 400px;
+  height: 800px;
 }
 
 .contactForm {
@@ -1818,7 +1820,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     position: fixed;
-    right: -400px;
+    right: -900px;
     top: 130px;
     z-index: 10;
     padding: 0;
@@ -2270,7 +2272,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     position: fixed;
-    right: -400px;
+    right: -900px;
     top: 130px;
     z-index: 10;
     padding: 0;
@@ -2651,7 +2653,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     position: fixed;
-    right: -400px;
+    right: -900px;
     top: 130px;
     z-index: 10;
     padding: 0;
