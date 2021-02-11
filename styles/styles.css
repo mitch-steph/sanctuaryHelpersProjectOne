@@ -2691,7 +2691,7 @@ a {
   }
   .contactForm fieldset {
     width: 100%;
-    min-height: 600px;
+    min-height: initial;
   }
   .contactForm .contactFormFlex1 {
     padding-right: 0;
