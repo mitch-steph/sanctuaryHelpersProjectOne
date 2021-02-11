@@ -1254,7 +1254,6 @@ footer p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 400px;
-  height: 800px;
 }
 
 .contactForm {
@@ -2708,7 +2707,7 @@ a {
   }
   .contactForm fieldset {
     width: 100%;
-    min-height: initial;
+    min-height: 535px;
   }
   .contactForm .contactFormFlex1 {
     padding-right: 0;
@@ -2735,7 +2734,7 @@ a {
   }
   .contactForm .contactFormFlex1 .contactNameFlex label {
     position: absolute;
-    top: -29px;
+    top: -20px;
   }
   .contactForm .contactFormFlex1 .contactEmailFlex,
   .contactForm .contactFormFlex1 .contactNameFlex {
