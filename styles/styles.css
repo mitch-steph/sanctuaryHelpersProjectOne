@@ -2122,7 +2122,7 @@ a {
     height: 70vh;
     min-height: 400px;
     max-height: 500px;
-    background: url(/assets/blog-image.jpg) right/cover;
+    background: url(../assets/blog-image.jpg) right/cover;
     position: relative;
   }
   .blogHeader h1 {
@@ -2552,7 +2552,7 @@ a {
     height: 70vh;
     min-height: 400px;
     max-height: 500px;
-    background: url(/assets/contact-image.jpg) right/cover;
+    background: url(../assets/contact-image.jpg) right/cover;
     position: relative;
   }
   .contactHeader h1 {
