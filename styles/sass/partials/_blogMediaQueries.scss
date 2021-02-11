@@ -95,9 +95,8 @@
   .blogHeader {
     h1 {
       align-self: center;
-      font-size: 9rem;
+      font-size: 7.5rem;
       position: relative;
-      top: 20px;
     }
 
     .blogHeaderNav {
@@ -106,8 +105,7 @@
     }
 
     .blogLogo {
-      // display: none;
-      padding-left: 30px;
+      padding-left: 38px;
       padding-top: 30px;
     }
   }
@@ -190,14 +188,17 @@
 // 750px Width
 
 @media (max-width: 750px) {
-
   input[type="checkbox"]:checked + .blogNav {
     right: -7px;
-    
+  }
+
+  .blogHeader {
+    h1 {
+      font-size: 6rem;
+    }
   }
 
   .blogHeaderNav {
-    
     .blogNav {
       display: flex;
       justify-content: space-between;
@@ -208,7 +209,7 @@
         width: 257px;
       }
     }
-     position: relative;
+    position: relative;
 
     .blogNav {
       flex-direction: column;
@@ -238,7 +239,8 @@
           font-size: 3rem;
           color: $everGreen;
 
-          &:hover {
+          &:hover,
+          &:focus {
             border-bottom: none;
           }
 
@@ -251,20 +253,12 @@
   }
 }
 
-
-
-
-
-
-
-
 // 680px Width
 
 @media (max-width: 680px) {
-
   .blogHeader {
-    height: 100vh;
-    min-height: 100vh;
+    height: 70vh;
+    min-height: 70vh;
   }
 
   .blogText {
@@ -279,16 +273,16 @@
     top: -50px;
   }
 
-.commentFlex .commentContainer {
-      width: 100%;
-      margin: 0 30px;
-    }
+  .commentFlex .commentContainer {
+    width: 100%;
+    margin: 0 30px;
+  }
 
-    .comment {
-      margin-bottom: 25px;
-    }
+  .comment {
+    margin-bottom: 25px;
+  }
 
-.blogForm {
+  .blogForm {
     display: flex;
     flex-direction: column;
 
@@ -297,75 +291,73 @@
       min-height: 600px;
     }
 
-  .formFlex1 {
-    padding-right: 0;
-    padding: 10px;
-    height: 200px;
-    flex-wrap: wrap;
-    label {
-      position: absolute;
-      top: -10px;
-      margin-left: 20px;
-
-      @include bodyText(1.5rem);
-      text-transform: uppercase;
-    }
-
-
-    .emailFlex label {
-      position: absolute;
-      top: 78px;
-    }
-    .nameFlex label {
-      position: absolute;
-      top: -29px;
-    }
-
-    .emailFlex,
-    .nameFlex {
-      width: 100%;
-      flex-direction: row;
+    .formFlex1 {
+      padding-right: 0;
+      padding: 10px;
+      height: 200px;
       flex-wrap: wrap;
-      justify-content: space-between;
-      input[type="text"],
-      input[type="email"] {
+      label {
+        position: absolute;
+        top: -10px;
+        margin-left: 20px;
+
+        @include bodyText(1.5rem);
+        text-transform: uppercase;
+      }
+
+      .emailFlex label {
+        position: absolute;
+        top: 78px;
+      }
+      .nameFlex label {
+        position: absolute;
+        top: -29px;
+      }
+
+      .emailFlex,
+      .nameFlex {
         width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        input[type="text"],
+        input[type="email"] {
+          width: 100%;
+        }
+      }
+    }
+
+    .nameFlex {
+      margin-top: 10px;
+      transform: translateY(-15px);
+    }
+
+    .formFlex2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+
+      textarea {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 200px;
+        max-height: 200px;
+        padding: 20px;
+        background-color: $mint;
+        border: 2px solid $everGreen;
+        resize: none;
+
+        @include bodyText(1.5rem);
+      }
+
+      button {
+        @include linkButton();
+        border: none;
+        width: 100%;
+        margin-top: 20px;
+        height: 35px;
       }
     }
   }
-
-  .nameFlex {
-    margin-top: 10px;
-    transform: translateY(-15px);
-  }
-
-  .formFlex2 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding:5px;
-    
-
-    textarea {
-      min-width: 100%;
-      max-width: 100%;
-      min-height: 200px;
-      max-height: 200px;
-      padding: 20px;
-      background-color: $mint;
-      border: 2px solid $everGreen; 
-      resize: none;
-
-      @include bodyText(1.5rem);
-    }
-
-    button {
-      @include linkButton();
-      border: none;
-      width: 100%;
-      margin-top: 20px;
-      height: 35px;
-    }
-  }
-}
 }

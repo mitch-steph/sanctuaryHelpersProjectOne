@@ -43,6 +43,7 @@
 
 @mixin linkButton() {
   margin-top: 10px;
+  padding-top: 1%;
   @include subHeading(1.5rem);
   background-color: $everGreen;
   color: $offWhite;
