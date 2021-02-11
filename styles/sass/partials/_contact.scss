@@ -10,7 +10,7 @@
   height: 70vh;
   min-height: 400px;
   max-height: 500px;
-  background: url(/assets/contact-image.jpg) center / cover;
+  background: url(../assets/contact-image.jpg) center / cover;
   position: relative;
 }
 
@@ -196,6 +196,7 @@ footer {
   justify-content: center;
   background: $black;
   clear: both;
+  box-shadow: 0 50vh 0 50vh $black;
 
   p {
     color: $offWhite;

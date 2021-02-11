@@ -254,7 +254,7 @@ body {
   height: 100vh;
   max-height: 1000px;
   min-height: 800px;
-  background: url(/assets/header-home.jpg) center/cover;
+  background: url(../assets/header-home.jpg) center/cover;
   position: relative;
 }
 
@@ -747,7 +747,7 @@ footer p {
   height: 70vh;
   min-height: 400px;
   max-height: 500px;
-  background: url(/assets/blog-image.jpg) center/cover;
+  background: url(../assets/blog-image.jpg) center/cover;
   position: relative;
 }
 
@@ -1179,7 +1179,7 @@ footer p {
   height: 70vh;
   min-height: 400px;
   max-height: 500px;
-  background: url(/assets/contact-image.jpg) center/cover;
+  background: url(../assets/contact-image.jpg) center/cover;
   position: relative;
 }
 
@@ -1495,6 +1495,8 @@ footer {
           justify-content: center;
   background: #151514;
   clear: both;
+  -webkit-box-shadow: 0 50vh 0 50vh #151514;
+          box-shadow: 0 50vh 0 50vh #151514;
 }
 
 footer p {
